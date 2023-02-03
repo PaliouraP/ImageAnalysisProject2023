@@ -1,7 +1,7 @@
 % DATA AND FEATURE EXTRACTION 
-% filename = 'data.zip';
+% filename = '..\data.zip';
 % 
-% file = unzip(filename,'final');
+% file = unzip(filename,'data');
 % features = [];
 % 
 % % Feature Extraction

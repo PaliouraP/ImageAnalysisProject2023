@@ -1,0 +1,47 @@
+r=[];
+result=[];
+
+%non zero elements of matrix W
+%non_zero=W(W~=0);
+
+%finding all non zero elements of matrix W
+% each element's row is stored in table row
+% each element's column is stored in table column
+[row,column]=find(W);
+rows_table=[];
+for m=1:4
+    n = randsample(500,1);
+    rows_table(end+1)=n;
+end
+
+for r=1:length(rows_table)
+    most_similar=find(W(rows_table(r),:))
+    for i=1:length(most_similar)       
+        % imshow(file{most_similar(i)})      
+        %subplot(3,1,1),imshow(file{most_similar(i)})
+        %result(end+1)=most_similar(i);        
+        %subplot,imshow(file{most_similar(i)});
+        %figure,imshow(file{most_similar(i)});
+        [x,i]=imread(file{most_similar(i)});
+        subplot(1,2,1)
+        
+
+    end
+end
+
+
+
+% %repeating the following address 4 times to extract 4 most similar images 
+% for x=1:4
+%     %generating random number between 1 and length(row)
+%     %length(row) represents the number of non zero elements in W
+%     i = randsample(length(row),1);
+%     pick=W(row(i),column(i));
+%     [row1,column1]=maxk(W(row(i),:),4);
+%   
+%     
+% 
+% end
+
+
+

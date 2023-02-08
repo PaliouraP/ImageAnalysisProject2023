@@ -6,7 +6,7 @@
 % illumination conditions 
 
 %--------- FOR ARRAYS WITH RANKED LISTS (EX. t)
-target_array_alt = t(:,1:4); % we only need the first 4 objects for each row 
+target_array_alt = top_n(:,1:4); % we only need the first 4 objects for each row 
 
 perfect_ranking_alt = [];
 for i=1:4:500
@@ -23,5 +23,7 @@ for row=1:500
         end
     end    
 end
-
+ns_score_alt=[];
 ns_score_alt = ns_sum_alt/500;
+table=convertCharsToStrings('table top_n');
+ns_score_final_results=[ns_score_final_results;table,ns_score_alt];

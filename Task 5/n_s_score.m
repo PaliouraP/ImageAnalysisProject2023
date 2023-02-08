@@ -19,10 +19,15 @@ end
 
 % replacing non-zero values with 1 on target array
 target_idx = target_array~=0;
-
 ns_sum = 0;
 for row=1:500
+    mp=target_array(row,:)
+    k=nnz(target_array(row,:) & perfect_ranking(row,:))
     ns_sum = (nnz(target_array(row,:) & perfect_ranking(row,:))) + ns_sum;
 end
 ns_score = ns_sum/500;
+table=convertCharsToStrings('table W');
+ns_score_final_results=[ns_score_final_results;table,ns_score];
+
+
 

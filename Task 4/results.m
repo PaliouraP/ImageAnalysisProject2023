@@ -1,8 +1,6 @@
 r=[];
 result=[];
 
-%non zero elements of matrix W
-%non_zero=W(W~=0);
 
 rows_table=[];
 
@@ -29,7 +27,7 @@ for r=1:length(rows_table)
         title ("Image "+o1(3)+": Image similarity: " + x1(i) + "",'FontSize',9,'FontWeight','normal',Color="#E3472B");
     end
 end
-
+    
 
 
 

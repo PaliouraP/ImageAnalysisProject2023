@@ -24,7 +24,7 @@ net = resnet18;
 % DO NOT FORGET TO RUN THE FOLLOWING LINE OF CODE IN THE COMMAND LINE!!!!!
 % -------------------------------------------------------------------------
 % Analyze the network architecture.
-%analyzeNetwork(net);
+analyzeNetwork(net);
 % -------------------------------------------------------------------------
 
 % Get the shape of the image input layer.

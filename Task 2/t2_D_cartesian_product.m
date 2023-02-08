@@ -2,7 +2,6 @@
 C = [];
 p = [];
 
-% doing it for 500 pics cause 10200 was too much
 % for each hyperedge
 for row=1:500
     % for each element m of the hyperedge

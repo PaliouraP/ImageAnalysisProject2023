@@ -4,7 +4,6 @@
 % Eucledean Distance
 D = squareform(pdist(features));
 
-
 % Keeping top-n minimum distance
 n = 100;
 t = [];
